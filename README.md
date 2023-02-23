@@ -1,23 +1,30 @@
-# nchu_lib
+# NCHU_Library_APP
 
-A new Flutter application.
+## 2023 Update
 
-## Getting Started
+因學校 API 已關閉，且本人已畢業，此專案終止。
 
-This project is a starting point for a Flutter application.
+## Introduction
 
-A few resources to get you started if this is your first Flutter project:
+因為忍受不了學校自習室預約 APP 又醜又難用，心血來潮重寫的。
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+最終目標是整合圖書館資訊及自習室預約兩功能。(兩者到目前為止都是分開的)
 
 
+## Demo
 
-# 常用參數 : 
+
+<p float="left">
+<img src="./demoPic/0.png"  width="24%">
+<img src="./demoPic/1.png"  width="24%">
+<img src="./demoPic/2.png"  width="24%">
+<img src="./demoPic/3.png"  width="24%">
+</p>
+
+
+
+# 雜亂筆記區
+## 常用參數 : 
 print(MediaQuery.of(context).size.height);      // app 畫面高
 print(MediaQuery.of(context).padding.top);      // 上方 Safe Area 高
 print(kToolbarHeight);                          // 上方 AppBar 高
@@ -32,22 +39,6 @@ MediaQuery.of(context).size.height
 
 
 data.runTimeType : 找資料型態
-
-測試API範例格式
-final String host = 'http://140.120.80.35/APPAPI/GetDemeritList.aspx?sid=1efc3c997d5dcf978a8a&authid=9a1fd4&restype=json';
-List datas;
-getData() async{
-await http.get(host).then((response){
-  datas = jsonDecode(response.body);
-});
-print(datas);
-}
-
-2021/02/23
-sid 
-4686c4ed451ed065043f
-authid 
-ff5962
 
 overflow: TextOverflow.ellipsis,
 
@@ -64,3 +55,22 @@ https://ithelp.ithome.com.tw/articles/10218170
 
 獲取長字串的一部分
 str.substring(0,8); 
+
+
+<!--
+測試API範例格式
+final String host = 'http://140.120.80.35/APPAPI/GetDemeritList.aspx?sid=1efc3c997d5dcf978a8a&authid=9a1fd4&restype=json';
+List datas;
+getData() async{
+await http.get(host).then((response){
+  datas = jsonDecode(response.body);
+});
+print(datas);
+}
+
+2021/02/23
+sid 
+4686c4ed451ed065043f
+authid 
+ff5962
+-->
