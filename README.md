@@ -23,6 +23,10 @@
 
 
 
+https://user-images.githubusercontent.com/33981880/220855557-ca6cf595-2587-4453-b737-b086d3d29a3c.mp4
+
+
+
 # 雜亂筆記區
 ## 常用參數 : 
 print(MediaQuery.of(context).size.height);      // app 畫面高
