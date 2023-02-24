@@ -10,7 +10,7 @@
 
 最終目標是整合圖書館資訊及自習室預約兩功能。(兩者到目前為止都是分開的)
 
-## Old version
+## Old version (Official version)
 <p float="left">
 <img src="./demoPic/old0.jpg"  width="24%">
 <img src="./demoPic/old1.jpg"  width="24%">
